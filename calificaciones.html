@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calificaciones - Portal Docente</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <img src="img/images.png" alt="Logo">
+            </div>
+
+            <div class="docente">
+                <strong>Portal Docente</strong>
+                <span>Periodo 2026</span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="dashboard.html">
+                    <i data-lucide="house"></i>
+                    Inicio
+                </a>
+
+                <a href="grupos.html">
+                    <i data-lucide="book-open"></i>
+                    Mis grupos
+                </a>
+
+                <a href="calificaciones.html" class="menu-activo">
+                    <i data-lucide="clipboard-check"></i>
+                    Calificaciones
+                </a>
+
+                <a href="evaluaciones.html">
+                    <i data-lucide="file-text"></i>
+                    Evaluaciones
+                </a>
+
+                <a href="calendario.html">
+                    <i data-lucide="calendar"></i>
+                    Calendario
+                </a>
+
+            </nav>
+
+            <div class="menu-inferior">
+
+                <a href="#">
+                    <i data-lucide="settings"></i>
+                    Configuración
+                </a>
+
+                <a href="#" id="cerrarSesion">
+                    <i data-lucide="log-out"></i>
+                    Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+                    <span class="periodo">PERIODO ACADÉMICO 2026</span>
+                    <h1>Calificaciones</h1>
+                </div>
+
+                <div class="usuario-header">
+
+                    <div class="avatar">
+                        DR
+                    </div>
+
+                    <div>
+                        <strong id="nombreUsuario">Docente</strong>
+                        <span>Profesor</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Registro de calificaciones</h2>
+                        <p>
+                            Selecciona el grupo y la evaluación
+                            que deseas registrar.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="filtros">
+
+                    <div class="campo-filtro">
+
+                        <label for="grupo">Grupo</label>
+
+                        <select id="grupo">
+
+                            <option value="">
+                                Selecciona un grupo
+                            </option>
+
+                            <option value="pwe">
+                                PWE-2026 · Programación Web
+                            </option>
+
+                            <option value="bd">
+                                BD-2026 · Bases de Datos
+                            </option>
+
+                            <option value="pw2">
+                                PW2-2026 · Programación Web II
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo-filtro">
+
+                        <label for="evaluacion">Evaluación</label>
+
+                        <select id="evaluacion">
+
+                            <option value="">
+                                Selecciona una evaluación
+                            </option>
+
+                            <option value="1">
+                                Parcial 1
+                            </option>
+
+                            <option value="2">
+                                Parcial 2
+                            </option>
+
+                            <option value="3">
+                                Proyecto final
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="panel tabla-calificaciones">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Estudiantes</h2>
+                        <p>
+                            Ingresa una calificación entre 0 y 10.
+                        </p>
+                    </div>
+
+                    <span class="estado">
+                        Borrador
+                    </span>
+
+                </div>
+
+
+                <div class="tabla-contenedor">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>#</th>
+                                <th>Estudiante</th>
+                                <th>Carné</th>
+                                <th>Calificación</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Juan Pérez</td>
+                                <td>20260001</td>
+                                <td>
+                                    <input
+                                        type="number"
+                                        min="0"
+                                        max="10"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                    >
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>María López</td>
+                                <td>20260002</td>
+                                <td>
+                                    <input
+                                        type="number"
+                                        min="0"
+                                        max="10"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                    >
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Carlos Martínez</td>
+                                <td>20260003</td>
+                                <td>
+                                    <input
+                                        type="number"
+                                        min="0"
+                                        max="10"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                    >
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Ana Rodríguez</td>
+                                <td>20260004</td>
+                                <td>
+                                    <input
+                                        type="number"
+                                        min="0"
+                                        max="10"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                    >
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="tabla-footer">
+
+                    <span>
+                        4 estudiantes
+                    </span>
+
+                    <button id="guardarCalificaciones">
+                        Guardar calificaciones
+                    </button>
+
+                </div>
+
+                <p id="mensajeCalificaciones"></p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+<script src="js/dashboard.js"></script>
+<script src="js/calificaciones.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>

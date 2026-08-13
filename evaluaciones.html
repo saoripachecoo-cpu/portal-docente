@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evaluaciones - Portal Docente</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <img src="img/images.png" alt="Logo">
+            </div>
+
+            <div class="docente">
+                <strong>Portal Docente</strong>
+                <span>Periodo 2026</span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="dashboard.html">
+                    <i data-lucide="house"></i>
+                    Inicio
+                </a>
+
+                <a href="grupos.html">
+                    <i data-lucide="book-open"></i>
+                    Mis grupos
+                </a>
+
+                <a href="calificaciones.html">
+                    <i data-lucide="clipboard-check"></i>
+                    Calificaciones
+                </a>
+
+                <a href="evaluaciones.html" class="menu-activo">
+                    <i data-lucide="file-text"></i>
+                    Evaluaciones
+                </a>
+
+                <a href="calendario.html">
+                    <i data-lucide="calendar"></i>
+                    Calendario
+                </a>
+
+            </nav>
+
+            <div class="menu-inferior">
+
+                <a href="#">
+                    <i data-lucide="settings"></i>
+                    Configuración
+                </a>
+
+                <a href="#" id="cerrarSesion">
+                    <i data-lucide="log-out"></i>
+                    Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+                    <span class="periodo">PERIODO ACADÉMICO 2026</span>
+                    <h1>Evaluaciones</h1>
+                </div>
+
+                <div class="usuario-header">
+
+                    <div class="avatar">
+                        DR
+                    </div>
+
+                    <div>
+                        <strong id="nombreUsuario">Docente</strong>
+                        <span>Profesor</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="bienvenida">
+
+                <div>
+                    <span class="etiqueta">EVALUACIONES ACADÉMICAS</span>
+
+                    <h2>Mis evaluaciones</h2>
+
+                    <p>
+                        Consulta las evaluaciones programadas
+                        para tus grupos.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="evaluaciones-lista">
+
+                <div class="evaluacion-card">
+
+                    <div class="evaluacion-fecha">
+                        <strong>18</strong>
+                        <span>AGO</span>
+                    </div>
+
+                    <div class="evaluacion-info">
+
+                        <span class="codigo">
+                            PWE-2026
+                        </span>
+
+                        <h2>Parcial 1</h2>
+
+                        <p>
+                            Programación Web
+                        </p>
+
+                        <small>
+                            <i data-lucide="clock"></i>
+                            7:00 AM
+                        </small>
+
+                    </div>
+
+                    <div class="evaluacion-estado pendiente">
+                        Pendiente
+                    </div>
+
+                    <a href="calificaciones.html" class="boton-evaluacion">
+                        Registrar notas
+                    </a>
+
+                </div>
+
+
+                <div class="evaluacion-card">
+
+                    <div class="evaluacion-fecha">
+                        <strong>22</strong>
+                        <span>AGO</span>
+                    </div>
+
+                    <div class="evaluacion-info">
+
+                        <span class="codigo">
+                            BD-2026
+                        </span>
+
+                        <h2>Parcial 1</h2>
+
+                        <p>
+                            Bases de Datos
+                        </p>
+
+                        <small>
+                            <i data-lucide="clock"></i>
+                            8:00 AM
+                        </small>
+
+                    </div>
+
+                    <div class="evaluacion-estado pendiente">
+                        Pendiente
+                    </div>
+
+                    <a href="calificaciones.html" class="boton-evaluacion">
+                        Registrar notas
+                    </a>
+
+                </div>
+
+
+                <div class="evaluacion-card">
+
+                    <div class="evaluacion-fecha">
+                        <strong>28</strong>
+                        <span>AGO</span>
+                    </div>
+
+                    <div class="evaluacion-info">
+
+                        <span class="codigo">
+                            PW2-2026
+                        </span>
+
+                        <h2>Proyecto final</h2>
+
+                        <p>
+                            Programación Web II
+                        </p>
+
+                        <small>
+                            <i data-lucide="clock"></i>
+                            7:00 AM
+                        </small>
+
+                    </div>
+
+                    <div class="evaluacion-estado activo">
+                        En curso
+                    </div>
+
+                    <a href="calificaciones.html" class="boton-evaluacion">
+                        Registrar notas
+                    </a>
+
+                </div>
+
+
+                <div class="evaluacion-card">
+
+                    <div class="evaluacion-fecha finalizada">
+                        <strong>05</strong>
+                        <span>AGO</span>
+                    </div>
+
+                    <div class="evaluacion-info">
+
+                        <span class="codigo">
+                            PWE-2026
+                        </span>
+
+                        <h2>Actividad 1</h2>
+
+                        <p>
+                            Programación Web
+                        </p>
+
+                        <small>
+                            <i data-lucide="clock"></i>
+                            7:00 AM
+                        </small>
+
+                    </div>
+
+                    <div class="evaluacion-estado finalizada">
+                        Finalizada
+                    </div>
+
+                    <a href="calificaciones.html" class="boton-evaluacion">
+                        Ver notas
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/dashboard.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

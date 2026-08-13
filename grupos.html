@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis grupos - Portal Docente</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <img src="img/images.png" alt="Logo">
+            </div>
+
+            <div class="docente">
+                <strong>Portal Docente</strong>
+                <span>Periodo 2026</span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="dashboard.html">
+                    <i data-lucide="house"></i>
+                    Inicio
+                </a>
+
+                <a href="grupos.html" class="menu-activo">
+                    <i data-lucide="book-open"></i>
+                    Mis grupos
+                </a>
+
+                <a href="calificaciones.html">
+                    <i data-lucide="clipboard-check"></i>
+                    Calificaciones
+                </a>
+
+                <a href="#">
+                    <i data-lucide="file-text"></i>
+                    Evaluaciones
+                </a>
+
+                 <a href="calendario.html">
+                    <i data-lucide="calendar"></i>
+                    Calendario
+                </a>
+
+            </nav>
+
+            <div class="menu-inferior">
+
+                <a href="#">
+                    <i data-lucide="settings"></i>
+                    Configuración
+                </a>
+
+                <a href="index.html">
+                    <i data-lucide="log-out"></i>
+                    Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+                    <span class="periodo">PERIODO ACADÉMICO 2026</span>
+                    <h1>Mis grupos</h1>
+                </div>
+
+                <div class="usuario-header">
+
+                    <div class="avatar">
+                        DR
+                    </div>
+
+                    <div>
+                        <strong>Docente</strong>
+                        <span>Profesor</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="bienvenida">
+
+                <div>
+                    <span class="etiqueta">GRUPOS ASIGNADOS</span>
+
+                    <h2>Mis grupos académicos</h2>
+
+                    <p>
+                        Consulta los grupos que tienes asignados
+                        durante el periodo académico.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="grupos-lista">
+
+                <div class="grupo-card">
+
+                    <div class="grupo-info">
+
+                        <span class="codigo">PWE-2026</span>
+
+                        <h2>Programación Web</h2>
+
+                        <p>
+                            <i data-lucide="clock"></i>
+                            Lunes · 7:00 AM - 10:00 AM
+                        </p>
+
+                    </div>
+
+                    <div class="grupo-estudiantes">
+
+                        <strong>28</strong>
+                        <span>Estudiantes</span>
+
+                    </div>
+
+                    <button>
+                        Ver grupo
+                    </button>
+
+                </div>
+
+
+                <div class="grupo-card">
+
+                    <div class="grupo-info">
+
+                        <span class="codigo">BD-2026</span>
+
+                        <h2>Bases de Datos</h2>
+
+                        <p>
+                            <i data-lucide="clock"></i>
+                            Martes · 8:00 AM - 11:00 AM
+                        </p>
+
+                    </div>
+
+                    <div class="grupo-estudiantes">
+
+                        <strong>32</strong>
+                        <span>Estudiantes</span>
+
+                    </div>
+
+                    <button>
+                        Ver grupo
+                    </button>
+
+                </div>
+
+
+                <div class="grupo-card">
+
+                    <div class="grupo-info">
+
+                        <span class="codigo">PW2-2026</span>
+
+                        <h2>Programación Web II</h2>
+
+                        <p>
+                            <i data-lucide="clock"></i>
+                            Miércoles · 7:00 AM - 10:00 AM
+                        </p>
+
+                    </div>
+
+                    <div class="grupo-estudiantes">
+
+                        <strong>31</strong>
+                        <span>Estudiantes</span>
+
+                    </div>
+
+                    <button>
+                        Ver grupo
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

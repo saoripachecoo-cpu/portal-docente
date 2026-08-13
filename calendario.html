@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendario - Portal Docente</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <img src="img/images.png" alt="Logo">
+            </div>
+
+            <div class="docente">
+                <strong>Portal Docente</strong>
+                <span>Periodo 2026</span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="dashboard.html">
+                    <i data-lucide="house"></i>
+                    Inicio
+                </a>
+
+                <a href="grupos.html">
+                    <i data-lucide="book-open"></i>
+                    Mis grupos
+                </a>
+
+                <a href="calificaciones.html">
+                    <i data-lucide="clipboard-check"></i>
+                    Calificaciones
+                </a>
+
+                <a href="evaluaciones.html">
+                    <i data-lucide="file-text"></i>
+                    Evaluaciones
+                </a>
+
+                <a href="calendario.html" class="menu-activo">
+                    <i data-lucide="calendar"></i>
+                    Calendario
+                </a>
+
+            </nav>
+
+            <div class="menu-inferior">
+
+                <a href="#">
+                    <i data-lucide="settings"></i>
+                    Configuración
+                </a>
+
+                <a href="#" id="cerrarSesion">
+                    <i data-lucide="log-out"></i>
+                    Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+                    <span class="periodo">PERIODO ACADÉMICO 2026</span>
+                    <h1>Calendario</h1>
+                </div>
+
+                <div class="usuario-header">
+
+                    <div class="avatar">
+                        DR
+                    </div>
+
+                    <div>
+                        <strong id="nombreUsuario">Docente</strong>
+                        <span>Profesor</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="bienvenida">
+
+                <div>
+                    <span class="etiqueta">AGENDA ACADÉMICA</span>
+
+                    <h2>Calendario académico</h2>
+
+                    <p>
+                        Consulta las próximas actividades y fechas
+                        importantes de tus grupos.
+                    </p>
+                </div>
+
+                <div class="bienvenida-icono">
+                    <i data-lucide="calendar-days"></i>
+                </div>
+
+            </section>
+
+
+            <section class="calendario-contenido">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Agosto 2026</h2>
+                            <p>Actividades programadas</p>
+                        </div>
+
+                    </div>
+
+                    <div class="eventos-calendario">
+
+                        <div class="evento-calendario">
+
+                            <div class="evento-fecha">
+                                <strong>18</strong>
+                                <span>AGO</span>
+                            </div>
+
+                            <div class="evento-detalle">
+
+                                <span class="evento-tipo azul">
+                                    CALIFICACIONES
+                                </span>
+
+                                <h3>Entrega de calificaciones</h3>
+
+                                <p>
+                                    Todos los grupos
+                                </p>
+
+                                <small>
+                                    <i data-lucide="clock"></i>
+                                    11:59 PM
+                                </small>
+
+                            </div>
+
+                            <span class="evento-estado pendiente">
+                                Próximo
+                            </span>
+
+                        </div>
+
+
+                        <div class="evento-calendario">
+
+                            <div class="evento-fecha">
+                                <strong>22</strong>
+                                <span>AGO</span>
+                            </div>
+
+                            <div class="evento-detalle">
+
+                                <span class="evento-tipo amarillo">
+                                    EVALUACIÓN
+                                </span>
+
+                                <h3>Parcial 1</h3>
+
+                                <p>
+                                    Programación Web
+                                </p>
+
+                                <small>
+                                    <i data-lucide="clock"></i>
+                                    7:00 AM
+                                </small>
+
+                            </div>
+
+                            <span class="evento-estado activo">
+                                Programado
+                            </span>
+
+                        </div>
+
+
+                        <div class="evento-calendario">
+
+                            <div class="evento-fecha">
+                                <strong>28</strong>
+                                <span>AGO</span>
+                            </div>
+
+                            <div class="evento-detalle">
+
+                                <span class="evento-tipo azul">
+                                    PROYECTO
+                                </span>
+
+                                <h3>Proyecto final</h3>
+
+                                <p>
+                                    Programación Web II
+                                </p>
+
+                                <small>
+                                    <i data-lucide="clock"></i>
+                                    7:00 AM
+                                </small>
+
+                            </div>
+
+                            <span class="evento-estado activo">
+                                Programado
+                            </span>
+
+                        </div>
+
+
+                        <div class="evento-calendario">
+
+                            <div class="evento-fecha finalizada">
+                                <strong>05</strong>
+                                <span>AGO</span>
+                            </div>
+
+                            <div class="evento-detalle">
+
+                                <span class="evento-tipo gris">
+                                    ACTIVIDAD
+                                </span>
+
+                                <h3>Actividad 1</h3>
+
+                                <p>
+                                    Programación Web
+                                </p>
+
+                                <small>
+                                    <i data-lucide="check"></i>
+                                    Finalizada
+                                </small>
+
+                            </div>
+
+                            <span class="evento-estado finalizada">
+                                Finalizada
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel resumen-calendario">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Resumen</h2>
+                            <p>Este mes</p>
+                        </div>
+
+                    </div>
+
+                    <div class="resumen-item">
+                        <span>Evaluaciones</span>
+                        <strong>3</strong>
+                    </div>
+
+                    <div class="resumen-item">
+                        <span>Entregas</span>
+                        <strong>2</strong>
+                    </div>
+
+                    <div class="resumen-item">
+                        <span>Actividades</span>
+                        <strong>5</strong>
+                    </div>
+
+                    <div class="resumen-item">
+                        <span>Próxima actividad</span>
+                        <strong>18 AGO</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

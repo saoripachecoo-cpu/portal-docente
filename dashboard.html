@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Docente</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <img src="img/images.png" alt="lodo del dashboard">
+            </div>
+
+            <div class="docente">
+                <strong>Portal Docente</strong>
+                <span>Periodo 2026</span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="dashboard.html">
+                    <i data-lucide="house"></i>
+                    Inicio
+                </a>
+
+                <a href="grupos.html" class="menu-activo">
+                    <i data-lucide="book-open"></i>
+                    Mis grupos
+                </a>
+
+                <a href="calificaciones.html">
+                    <i data-lucide="clipboard-check"></i>
+                    Calificaciones
+                </a>
+
+                <a href="evaluaciones.html">
+                    <i data-lucide="file-text"></i>
+                    Evaluaciones
+                </a>
+
+                 <a href="calendario.html">
+                    <i data-lucide="calendar"></i>
+                    Calendario
+                </a>
+
+            </nav>
+
+            <div class="menu-inferior">
+
+                <a href="#">
+                    ⚙ Configuración
+                </a>
+
+                <a href="#" id="cerrarSesion">
+                     <i data-lucide="log-out"></i>
+                    Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+                    <span class="periodo">PERIODO ACADÉMICO 2026</span>
+                    <h1>Panel docente</h1>
+                </div>
+
+                <div class="usuario-header">
+
+                    <div class="avatar">
+                        DR
+                    </div>
+
+                    <div>
+                        <strong>Docente</strong>
+                        <span>Profesor</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="bienvenida">
+
+                <div>
+                    <span class="etiqueta">PORTAL ACADÉMICO</span>
+
+                    <h2>Bienvenido, <span id="nombreUsuario"></span></h2>
+
+                    <p>
+                        Aquí puedes consultar tus grupos, gestionar
+                        evaluaciones y registrar calificaciones.
+                    </p>
+                </div>
+
+                <div class="bienvenida-icono">
+                    ✦
+                </div>
+
+            </section>
+
+            <section class="estadisticas">
+
+                <div class="estadistica">
+
+                    <div class="estadistica-icono azul">
+                       <i class="bi bi-file-person"></i>
+                    </div>
+
+                    <div>
+                        <span>Mis grupos</span>
+                        <strong>4</strong>
+                    </div>
+
+                </div>
+
+                <div class="estadistica">
+
+                    <div class="estadistica-icono amarillo">
+                        <i class="bi bi-backpack3"></i>
+                    </div>
+
+                    <div>
+                        <span>Estudiantes</span>
+                        <strong>126</strong>
+                    </div>
+
+                </div>
+
+                <div class="estadistica">
+
+                    <div class="estadistica-icono azul">
+                        <i class="bi bi-card-checklist"></i>
+                    </div>
+
+                    <div>
+                        <span>Evaluaciones</span>
+                        <strong>8</strong>
+                    </div>
+
+                </div>
+
+                <div class="estadistica">
+
+                    <div class="estadistica-icono amarillo">
+                        !
+                    </div>
+
+                    <div>
+                        <span>Pendientes</span>
+                        <strong>3</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="paneles">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Accesos rápidos</h2>
+                            <p>Acciones frecuentes</p>
+                        </div>
+
+                    </div>
+
+                    <div class="accesos">
+
+                        <a href="#" class="acceso">
+
+                            <div class="acceso-icono">
+                                <i class="bi bi-card-checklist"></i>
+                            </div>
+
+                            <div>
+                                <strong>Ingresar calificaciones</strong>
+                                <span>Registra las notas de tus estudiantes</span>
+                            </div>
+
+                            <b>›</b>
+
+                        </a>
+
+                        <a href="#" class="acceso">
+
+                            <div class="acceso-icono">
+                                <i class="bi bi-file-person"></i>
+                            </div>
+
+                            <div>
+                                <strong>Mis grupos</strong>
+                                <span>Consulta tus grupos asignados</span>
+                            </div>
+
+                            <b>›</b>
+
+                        </a>
+                        
+
+                        <a href="#" class="acceso">
+
+                            <div class="acceso-icono">
+                                <i class="bi bi-card-checklist"></i>
+                            </div>
+
+                            <div>
+                                <strong>Evaluaciones</strong>
+                                <span>Consulta tus evaluaciones</span>
+                            </div>
+
+                            <b>›</b>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Avisos</h2>
+                            <p>Información importante</p>
+                        </div>
+
+                        <a href="#">Ver todos</a>
+
+                    </div>
+
+                    <div class="aviso">
+
+                        <div class="aviso-punto"></div>
+
+                        <div>
+                            <strong>Registro de calificaciones</strong>
+
+                            <p>
+                                El periodo para registrar notas
+                                está próximo a finalizar.
+                            </p>
+
+                            <small>Hace 2 días</small>
+                        </div>
+
+                    </div>
+
+                    <div class="aviso">
+
+                        <div class="aviso-punto amarillo"></div>
+
+                        <div>
+                            <strong>Evaluaciones pendientes</strong>
+
+                            <p>
+                                Tienes evaluaciones pendientes
+                                por registrar.
+                            </p>
+
+                            <small>Hace 4 días</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="panel calendario">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Calendario académico</h2>
+                        <p>Próximas actividades</p>
+                    </div>
+
+                    <a href="#">Ver calendario</a>
+
+                </div>
+
+                <div class="eventos">
+
+                    <div class="evento">
+
+                        <div class="fecha">
+                            <strong>18</strong>
+                            <span>AGO</span>
+                        </div>
+
+                        <div>
+                            <strong>Entrega de calificaciones</strong>
+                            <span>Todos los grupos</span>
+                        </div>
+
+                    </div>
+
+                    <div class="evento">
+
+                        <div class="fecha">
+                            <strong>22</strong>
+                            <span>AGO</span>
+                        </div>
+
+                        <div>
+                            <strong>Evaluación parcial</strong>
+                            <span>Programación Web</span>
+                        </div>
+
+                    </div>
+
+                    <div class="evento">
+
+                        <div class="fecha">
+                            <strong>28</strong>
+                            <span>AGO</span>
+                        </div>
+
+                        <div>
+                            <strong>Cierre de periodo</strong>
+                            <span>Periodo académico 2026</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer>
+                Portal Docente · 2026
+            </footer>
+
+        </main>
+
+    </div>
+<script src="js/dashboard.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
