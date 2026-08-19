@@ -1,0 +1,107 @@
+{ 
+  "estudiantes": [
+    {
+      "nombre": "Juan Pérez",
+      "calificaciones": {
+        "programacionWeb": 8.5,
+        "basesDeDatos": 9.0,
+        "programacionWebII": 8.0
+      }
+    },
+    {
+      "nombre": "María López",
+      "calificaciones": {
+        "programacionWeb": 9.5,
+        "basesDeDatos": 8.0,
+        "programacionWebII": 9.0
+      }
+    },
+    {
+      "nombre": "Carlos Martinez",
+      "calificaciones": {
+        "programacionWeb": 7.5,
+        "basesDeDatos": 8.5,
+        "programacionWebII": 7.0
+      }
+    },
+    {
+      "nombre": "Ana Rodriguez",
+      "calificaciones": {
+        "programacionWeb": 7.0,
+        "basesDeDatos": 6.5,
+        "programacionWebII": 7.5
+      }
+    }
+  ]
+}
+{   
+  "grupos": [
+    {
+      "id": 1,
+      "nombre": "Programacion web",
+      "estudiantes": [1, 2, 3, 4]
+    }
+    {
+      "id": 2,
+      "nombre": "Base de datos",
+      "estudiantes": [1, 2,3, 4]
+    },
+    {
+      "id": 3,
+      "nombre": "Programacion web II",
+      "estudiantes": [1, 2, 3, 4]
+    }
+  ]
+}
+ { 
+     "evaluaciones": {
+      "id": 1,
+      "materia": "Programacion Web",
+      "fecha": "2026-08-18",
+      "grupo": 1
+    },
+    {
+      "id": 2,
+      "materia": "Base de Datos",
+      "fecha": "2026-08-22",
+      "grupo": 2
+    },
+    {
+      "id": 3,
+      "materia": "Programacion Web II",
+      "fecha": "2026-08-28",
+      "grupo": 3
+    }
+  
+ {
+  "dashboard": {
+    "totalEstudiantes": 4,
+    "totalGrupos": 3,
+    "promedioGeneral": 8.4,
+    "mejorMateria": "Bases de Datos",
+    "peorMateria": "Programacion Web II"
+  }
+}
+{
+  "calendario": [
+    {
+      "id": 1,
+      "evento": "Parcial Programacion Web",
+      "fecha": "2026-08-18",
+      "grupo": "Grupo 1"
+    },
+    {
+      "id": 2,
+      "evento": "Entrega Proyecto Base de Datos",
+      "fecha": "2026-08-22",
+      "grupo": "Grupo 2"
+    },
+    {
+      "id": 3,
+      "evento": "Parcial Programacion Web II",
+      "fecha": "2026-08-28",
+      "grupo": "Grupo 3"
+    }
+  ]
+}
+ 
